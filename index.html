@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>是CHIEN畫的一些畫</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="wow.min(1).js"></script> <!-- 引入 JavaScript 檔案 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+</head>
+
+<body>
+
+    <div class="cursor"></div>
+
+    <script type="text/javascript">
+        const cursor = document.querySelector(".cursor");
+        let timeout;
+
+        
+        function updateCursor(e) {
+            const x = e.clientX; 
+            const y = e.clientY; 
+            cursor.style.left = `${x}px`;
+            cursor.style.top = `${y}px`;
+        }
+
+        // 顯示鼠標
+        function showCursor() {
+            cursor.style.display = "block";
+            clearTimeout(timeout); // 
+        }
+
+        // 隱藏鼠標
+        function hideCursor() {
+            timeout = setTimeout(() => {
+                cursor.style.display = "none";
+            }, 1000);
+        }
+
+        
+        document.addEventListener("mousemove", (e) => {
+            showCursor();
+            updateCursor(e);
+            hideCursor();
+        });
+
+        
+        document.addEventListener("mouseout", () => {
+            cursor.style.display = "none";
+        });
+
+        
+        document.addEventListener("scroll", () => {
+            showCursor();
+        });
+    </script>
+
+    <div>
+    <a href="#top" class="top">
+        <img src="top.png" alt="">
+    </a>
+    </div>
+    <div class="container">
+        <div class="name animate__animated animate__fadeInDownBig">
+            <h1>Hello I'm CHIEN~!!</h1>
+        </div>
+        <div class="info animate__animated animate__fadeInDownBig">
+            <p>小廢物 沒用的大學生 </p>
+            <p>
+        </div>
+        <div class="photo">
+            <img src="my.jpg" alt="" class="images">
+            <div class="bg">
+            </div>
+
+
+            <div>
+
+                <div class="button-group">
+                    <a href="https://www.instagram.com/" class="button" target="_blank">
+                        <img src="icon.jpg" alt="" class="icon">
+                    </a>
+                    <a href="https://www.line.me/tw/" class="button" target="_blank">
+                        <img src="line.jpg" alt="" class="line">
+                    </a>
+                    <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=en" class="button" target="_blank">
+                        <img src="kakaotalk.png" alt="" class="kaka">
+                    </a>
+                </div>
+                
+                <script src="wow.min(1).js"></script>
+                    <script>
+                        new wow.min().init();
+                    </script>
+              
+                            </head>
+
+                           
+                                <div class="infoo animate__animated animate__fadeInUpBig wow">
+                                    <p>| ABOUT ME |</p>
+                                </div>
+                                <div class="container2 animate__animated animate__fadeInUpBig wow">
+                                    <img src="my2.jpg" alt="About me" class="my">
+                                    <div class="infooo">
+                                        <p>CHIEN</p>
+                                        <p>• MING CHAUNG UNIVERSITY</p>
+                                        <p>• COMMERCIAL DESIGN STUDENT</p>
+                                        <p>• HEY, I'M IN 3RD GRADE NOW, SOOOOOOO TIRED ^^</p>
+                                    </div>
+                                </div>
+                                
+                    <div class="inf animate__animated animate__fadeInUpBig wow">
+                        <p>只想耍廢，躺一整天，心累，又冷又廢，永遠寫不完作業，喔夜，每天都在熬夜 </p>
+                        <p>⬇ 歡迎看看北藍的插畫 療癒身心 ⬇</p>
+                    
+                    </div>
+
+                    
+                    <div class="pro animate__animated animate__fadeInUpBig wow">
+                        <p>| PORTFOLIO |</p>
+
+                        <div class="carousel animate__animated animate__fadeInUpBig wow">
+                            <div class="carousel-track">
+                                <img src="image1.jpg" alt="Image 1" class="carousel-img">
+                                <img src="image2.jpg" alt="Image 2" class="carousel-img">
+                                <img src="image3.jpg" alt="Image 3" class="carousel-img">
+                                <img src="image1.jpg" alt="Image 1" class="carousel-img">
+                            </div>
+                        </div>
+                        <div class="cute animate__animated animate__fadeInUpBig wow">
+                            <div class="cute-item">
+                                    <img src="pp2.jpg" alt="pp2" onclick="openModal('pp2.jpg')">
+                                    <div class="cute-title">
+                                    </div>
+                                
+                            </div>
+
+
+                            <div class="works animate__animated animate__fadeInUpBig wow">
+                                <div class="work-item">
+                                    <img src="photo1.jpg" alt="Photo 1" onclick="openModal('photo1.jpg')">
+                                    <div class="work-title">點我</div>
+                                </div>
+                                <div class="work-item">
+                                    <img src="photo2.jpg" alt="Photo 2" onclick="openModal('photo2.jpg')">
+                                    <div class="work-title">點我</div>
+                                </div>
+                                <div class="work-item">
+                                    <img src="photo3.jpg" alt="Photo 3" onclick="openModal('photo3.jpg')">
+                                    <div class="work-title">點我</div>
+                                </div>
+                                <div class="work-item">
+                                    <img src="pp1.jpg" alt="Photo 4" onclick="openModal('pp1.jpg')">
+                                    <div class="work-title">點我</div>
+                                </div>
+                            </div>
+                            
+                            <!-- 模態框結構 -->
+                            <div id="imageModal" class="modal">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <img class="modal-content" id="modalImage">
+                            </div>
+                            
+
+                            </div>
+
+                            <div class="cute2 animate__animated animate__fadeInUpBig wow">
+                                <div class="cute2-item">
+                                        <img src="pp3.jpg" alt="pp3" onclick="openModal('pp3.jpg')">
+                                        <div class="cute2-title">
+                                        </div>
+                            
+                                </div>
+                            </div>
+
+
+                            <div class="end">
+                                <p>@CHIEN</p>
+                                <p>
+                            </div>
+
+
+</body>
+
+</html>

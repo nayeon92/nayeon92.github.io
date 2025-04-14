@@ -1,0 +1,486 @@
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative; 
+    
+}
+.bg {
+    position: fixed; /* 背景絕對定位 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 填滿容器寬度 */
+    height: 100vh; /* 填滿容器高度 */
+    background-color: rgb(249, 245, 239); /* 背景顏色 */
+    z-index: -1; /* 設定較低的層級 */
+}
+.images {
+    width: 200 px;
+    height: 200px;
+    border-radius: 50%;
+    animation-name:movien ;
+    animation-duration: 2s;
+    position: relative; /* 圖片相對定位 */
+    z-index: 0; /* 圖片層級高於背景 */
+    /*animation-iteration-count: infinite*/
+    
+}
+
+@keyframes movien{
+    from{
+        opacity: 0;
+        transform: translateY(-100px) ;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.photo {
+    position: relative;
+    top: 30px;
+    text-align: center;
+}
+.name {
+    position: relative;
+    top: 45px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+h1 { /*chien*/
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0b1a3b;
+    font-size: 35px;
+    
+}
+.animate__fadeInDownBig {
+    animation-duration: 1.5s; /* 將動畫時間設定為 5 秒 */
+}
+
+.info {/*廢物大學生*/
+    position:relative;
+    top: 35px;
+    text-align: center;
+    color:#0b1a3b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 0.8;
+    z-index: 2;
+}
+.infoo{/*about me*/
+    position:relative;
+    top: 50px;
+    text-align: center;
+    color:#0b1a3b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    line-height: 0.5;
+    z-index: 2;
+}
+.inf{/*文字內文*/
+    position:relative;
+    top: -110px;
+    text-align: center;
+    color:#0b1a3b;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    line-height: 1;
+    vertical-align: middle;
+    transition: all .3s linear;
+    z-index: 2; 
+}
+.inf:hover{
+    color: #b98080;
+}
+.container2 {
+    display: flex; /* 使用 Flexbox 將內容排成水平結構 */
+    align-items: center; /* 垂直居中對齊 */
+    justify-content: center; /* 水平居中對齊 */
+    gap: 20px; /* 設置圖片與文字之間的間距 */
+}
+
+.my { /* about me圖片 */
+    width: 450px; /* 根據需求調整圖片大小 */
+    height: auto;
+    border-radius: 5px; /* 圖片加圓角 */
+}
+
+.infooo { /* 英文內文 */
+    position: relative;
+    top: -20px;
+    text-align: left;
+    left:-120px;
+    color: #0b1a3b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.5; /* 增加行間距 */
+    transition: all 0.3s linear;
+    z-index: 2;
+    white-space: nowrap; /* 防止文字換行 */
+}
+
+.infooo:hover {
+    color: #b98080;
+}
+
+.pro{
+    position:relative;
+    top: -30px;
+    text-align: center;
+    color:#0b1a3b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    line-height: 0.5;
+    z-index: 2;
+}
+
+.button {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid rgb(249, 245, 239)08;
+   /* left: 235px;*/
+    padding: 20px 20px;
+    margin: 50px 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #3d3d3d;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+.button-container{
+    display: flex; /* 使用 Flexbox */
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中（如果需要） */
+    gap:200px; /* 按鈕之間的間距 */
+    flex-wrap: wrap; /* 如果空間不足，按鈕換行 */
+    height: 100vh; /* 可選，讓父容器充滿視窗高度，便於垂直置中 */
+}
+.button:hover {
+    transform: scale(1.3); /* 放大效果 */
+    color: #df9c9c; /* 可選，改變字體顏色 */
+    background: url('icon.png') no-repeat center center;
+    background-size: contain;
+    mix-blend-mode: multiply;  /* 避免灰色底色影響 */
+}
+
+/*.button:hover {
+    background-color: blanchedalmond;
+    filter:grayscale(0%)
+}*/
+.icon {
+    position: absolute;
+    top: 1px;
+    left: -4px;
+    width: 50px;
+    background: url('icon.png') no-repeat center center;
+    background-size: contain;
+    mix-blend-mode: multiply;  /* 避免灰色底色影響 */
+}
+.line {
+    position: absolute;
+    top: -8px;
+    left: -9px;
+    width: 60px;
+    background: url('icon.png') no-repeat center center;
+    background-size: contain;
+    mix-blend-mode: multiply;  /* 避免灰色底色影響 */
+}
+.kaka {
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    width: 65px;
+    background: url('icon.png') no-repeat center center;
+    background-size: contain;
+    mix-blend-mode: multiply;  /* 避免灰色底色影響 */
+}
+.top {
+    display: block;
+    /* 變區塊 */
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    /* 變圓形 */
+   /* background-color: rgb(169, 175, 154);*/
+    text-align: center;
+    padding-top: 16px;
+    box-sizing: border-box;
+    /* 把padding、border的尺寸含入高度、寬度內 */
+    background-color: transparent; /* 確保背景透明 */
+    overflow: hidden; /* 確保圖片不超出按鈕範圍 */
+    z-index: 500;
+}
+.top img {
+    width: 100%;
+    height: 100%; /* 確保圖片填滿按鈕 */
+    object-fit: cover; /* 確保圖片適配圓形框架，防止變形 */
+    border-radius: 50%; /* 圖片也需圓角，與按鈕框架匹配 */
+}
+.works{
+    position: relative;
+    top: -10px;
+    /*left: 190px;*/
+    display: grid;
+    justify-content: center;
+    align-items: center; /* 垂直居中 */
+    /*grid-template-columns: repeat(2,0.5fr);*/
+    grid-template-columns: 215px 215px;
+    gap: 20px;
+    cursor: pointer;
+  transition: 0.3s;
+}
+.work-item img {
+    /*display: flex;*/
+    align-items: center;
+    max-width:100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    /*filter:grayscale(100%)*/
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.work-item{
+    position: relative;
+    line-height: 0;
+    /*overflow: hidden;*/
+    max-width: 100%;
+}
+
+.work-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); /* 居中對齊 */
+    width: auto;
+    white-space: nowrap; /* 防止文字換行 */
+    padding: 20px 40px; /* 增加一些內邊距來擴大背景 */
+    text-align: center;    
+    color: #fff; /* 文字顏色 */
+    background-color: #b98080; /* 半透明背景色，可自定義顏色 */
+    border-radius: 80px; /* 橢圓背景 */
+    font-family: sans-serif;
+    font-size: 20px;
+    opacity: 1;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+}
+.work-item:hover .work-title{
+    opacity: 0;
+    z-index: -100;
+}
+.work-item:hover img{
+    transform: scale(1.08); 
+    opacity: 1;
+}
+.modal {/*模擬框*/
+    display: none; /* 初始隱藏 */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* 背景半透明黑色 */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%; /* 最大寬度 */
+    max-height: 80%; /* 最大高度 */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content {
+    animation: zoomIn 0.3s; /* 放大動畫 */
+   transform: translate(0%, 13%); /* 垂直水平居中 */
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.carousel {
+    position: relative;
+    top: 30px;
+    width: 450px;
+    overflow: hidden;
+    margin: 0 auto; 
+    margin-bottom: 50px;
+}
+
+.carousel-track {
+    display: flex;
+    width: 100%; /* 如果有三張圖片，每個圖片會占用33% */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    1% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(-300%); }
+}
+
+.carousel-track {
+    animation: slide 6s infinite;
+}
+.cute{
+    
+    margin: 85px;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 70px;
+}
+.cute-item img {
+    width: auto;
+    height: 250px;
+   opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    
+}
+.cute-item{
+    position: relative;
+    line-height: 0;
+    /*overflow: hidden;*/
+    max-width: 100%;
+}
+.cute-title{
+    position: absolute;
+    top:40%;
+    left: 50%;
+    width: 100%;
+    text-align: center;    
+    color: #0b1a3b;
+    font-family: sans-serif;
+    font-size: 20px;
+    /*opacity: 0;*/
+}
+/*.work-item:hover .work-title{
+    opacity: 1;
+}*/
+.cute-item:hover img{
+    transform: scale(1.08); 
+    opacity: 1;
+}
+.end {
+    text-align: center;
+    color: #0b1a3b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5; /* 適當增加行高 */
+    margin-top: 100px; /* 增加頂部的間距 */
+    margin-bottom: -50px; /* 增加底部的間距，讓內容與底部留空 */
+    z-index: 2;  
+}
+
+/*.html,body{
+    cursor: none;
+}
+.myCursor{
+position: absolute;
+width: 50px;
+height: 50px;
+}*/
+.cute2{
+    margin:-30px;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    position: relative;
+}
+.cute2-item img {
+    width: 450px;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+.cute2-item{
+    position: relative;
+    line-height: 0;
+    /*overflow: hidden;*/
+    max-width: 100%;
+}
+.cute2-title{
+    position: absolute;
+    top:100%;
+    left: 32%;
+    width: 100%;
+    text-align: center;    
+    color: #0b1a3b;
+    font-family: sans-serif;
+    font-size: 20px;
+    /*opacity: 0;*/
+}
+/*.work-item:hover .work-title{
+    opacity: 1;
+}*/
+.cute2-item:hover img{
+    transform: scale(1.08); 
+    opacity: 1;
+}
+body{
+    height: auto;
+    cursor: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cursor{
+    z-index: 999;
+    position: fixed;
+    background: #d17c7c;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px#d17c7c,
+               0 0 60px#d17c7c,
+               0 0 100px#d17c7c;
+    animation: colors 5s infinite;
+    transform: translate(-50% -50%);
+    display: none;
+}
+
+.cursor::before{
+    content: '';
+    position: absolute;
+    opacity: 0.2;
+    transform: translate(-30%,-30%);
+}
+
+@keyframes colors{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
